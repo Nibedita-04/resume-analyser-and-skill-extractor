@@ -1,55 +1,55 @@
-Resume Skill Extractor
+# Resume Skill Extractor
 
 An AI-powered resume parsing system that extracts structured skill data using Large Language Models (LLMs), Pydantic-based schema enforcement, and output parsing. The project supports both batch resume processing and an interactive Streamlit web interface.
 
-Project Overview
+# Project Overview
 
 This tool automates the extraction of skills and relevant resume fields while ensuring clean, structured, and validated outputs. It is designed as a scalable foundation for advanced resume analytics, matching, and recruitment intelligence systems.
 
 The extraction pipeline ensures that only meaningful and non-empty fields are returned, improving readability and downstream usability.
 
-System Workflow
+# System Workflow
 Batch Mode (main.py)
 
-Loads resumes from a folder in batches (currently limited to 5 resumes per run)
+- Loads resumes from a folder in batches (currently limited to 5 resumes per run)
 
-Sends resume text to an LLM using a structured prompt through a LangChain pipeline
+- Sends resume text to an LLM using a structured prompt through a LangChain pipeline
 
-Uses a Pydantic schema to define and enforce expected extraction fields
+- Uses a Pydantic schema to define and enforce expected extraction fields
 
-Parses and validates model outputs with an output parser
+- Parses and validates model outputs with an output parser
 
-Displays structured extraction results in the terminal
+- Displays structured extraction results in the terminal
 
-Filters out empty fields to maintain clean outputs
+- Filters out empty fields to maintain clean outputs
 
-Streamlit Web Application
+# Streamlit Web Application
 
-Allows users to upload a resume via a browser interface
+- Allows users to upload a resume via a browser interface
 
-Processes resumes using the same extraction pipeline
+- Processes resumes using the same extraction pipeline
 
-Displays extracted skills and structured fields instantly
+- Displays extracted skills and structured fields instantly
 
-Automatically removes empty or irrelevant fields from results
+- Automatically removes empty or irrelevant fields from results
 
-Key Features
+# Key Features
 
-LLM-driven resume skill extraction
+- LLM-driven resume skill extraction
 
-Pydantic-based schema validation for structured outputs
+- Pydantic-based schema validation for structured outputs
 
-LangChain-powered processing pipeline
+- LangChain-powered processing pipeline
 
-Batch resume ingestion and processing
+- Batch resume ingestion and processing
 
-Interactive Streamlit front-end
+- Interactive Streamlit front-end
 
-Clean output formatting with empty-field filtering
+- Clean output formatting with empty-field filtering
 
-Modular, extendable project architecture
+- Modular, extendable project architecture
 
-Tech Stack
+# Tech Stack
 
 Python
 
@@ -60,11 +60,6 @@ Pydantic
 Streamlit
 
 Large Language Model API (OpenAI/Groq/Compatible APIs)
-
-Installation
-git clone https://github.com/your-username/resume-skill-extractor.git
-cd resume-skill-extractor
-pip install -r requirements.txt
 
 Usage
 Run Batch Processing
@@ -91,18 +86,18 @@ Example:
   "soft_skills": ["Communication", "Problem Solving"]
 }
 
-Future Roadmap
+# Future Roadmap
 
-Database integration for storing parsed resumes
+- Database integration for storing parsed resumes
 
-Resume-to-job matching and ranking algorithms
+- Resume-to-job matching and ranking algorithms
 
-Skill gap analysis and candidate profiling
+- Skill gap analysis and candidate profiling
 
-Scalable multi-user API service
+- Scalable multi-user API service
 
-Analytics dashboard for recruiters and HR teams
+- Analytics dashboard for recruiters and HR teams
 
-Purpose
+# Purpose
 
-This project serves as a base pipeline for building intelligent hiring, talent screening, and resume intelligence platforms.
+This project serves as a base pipeline for building intelligent hiring, talent screening, and resume matching platforms.

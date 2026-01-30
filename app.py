@@ -1,6 +1,5 @@
 import tempfile
 import streamlit as st
-
 from loaders.resume_loader import load_resume
 from utils.text_cleaner import merge_documents_by_source, clean_resume_text
 from utils.result_cleaner import remove_empty_fields

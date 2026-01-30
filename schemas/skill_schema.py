@@ -1,7 +1,12 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
 
 class SkillExtraction(BaseModel):
+    name: Optional[str] = Field(
+        default=None,
+        description="Full name of the candidate from the resume"
+    )
+     
     programming_languages: List[str] = Field(
         description = "Programming languages explicitly mentioned in the resume"
     )

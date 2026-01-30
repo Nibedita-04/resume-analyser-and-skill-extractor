@@ -18,6 +18,7 @@ def get_skill_extraction_prompt():
         4. If a category has no skills, return an empty list.
         5. Do NOT add extra fields.
         6. Output MUST be valid JSON.
+        7. Extract the candidate's full name. If missing, return null.
 
         {format_instructions}
 

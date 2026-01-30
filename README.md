@@ -23,6 +23,8 @@ Batch Mode (main.py)
 
 - Filters out empty fields to maintain clean outputs
 
+![alt text](image.png)
+
 # Streamlit Web Application
 
 - Allows users to upload a resume via a browser interface

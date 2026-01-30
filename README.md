@@ -63,16 +63,16 @@ Streamlit
 
 Large Language Model API (OpenAI/Groq/Compatible APIs)
 
-Usage
-Run Batch Processing
-python main.py
-
+##Usage
+#Run Batch Processing
+`python main.py`
+---
 
 Ensure resumes are placed inside the configured input folder.
 
-Run Streamlit App
-streamlit run app.py
-
+#Run Streamlit App
+`streamlit run app.py`
+---
 
 Upload a resume via the UI to extract skills interactively.
 
